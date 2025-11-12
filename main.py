@@ -8,11 +8,11 @@ SCREEN_SIZE: Tuple[int, int] = (800, 600)
 SCREEN = pygame.display.set_mode(SCREEN_SIZE)
 pygame.display.set_caption("test")
 CLOCK = pygame.time.Clock()
-delta_time: float = 0.1
 font = pygame.font.Font(None, 36)
 
 async def main() -> None:
     running: bool = True
+    delta_time: float = 0.1
     hello_world = font.render("Hello World", True, (255, 255, 255))
     while running:
         for event in pygame.event.get():
