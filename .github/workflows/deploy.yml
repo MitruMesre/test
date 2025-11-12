@@ -25,7 +25,7 @@ jobs:
         run: pip install pygbag
 
       - name: Build with pygbag
-        run: pygbag --build --no-serve .
+        run: pygbag --build .
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
