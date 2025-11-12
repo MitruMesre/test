@@ -4,8 +4,8 @@ from typing import Tuple
 
 pygame.init()
 
-SCREEN_SIZE: Tuple[int, int] = (800, 600)
-SCREEN = pygame.display.set_mode(SCREEN_SIZE)
+SCREEN_SIZE: Tuple[int, int] = (1080, 720)
+SCREEN = pygame.display.set_mode(SCREEN_SIZE, pygame.SCALED | pygame.NOFRAME)
 pygame.display.set_caption("test")
 CLOCK = pygame.time.Clock()
 delta_time: float = 0.1
